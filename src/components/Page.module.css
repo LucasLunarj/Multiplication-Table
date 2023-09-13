@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  height: 100%;
+
+  color: black;
+}
+.container h1 {
+  font-size: 45px;
+  padding-top: 10px;
+  text-align: center;
+}
+.content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content p {
+  font-size: 30px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableBox {
+  margin-top: 40px;
+  padding: 6px;
+  min-width: 80%;
+  max-width: 50%;
+  border-radius: 8px;
+  background-color: antiquewhite;
+}
