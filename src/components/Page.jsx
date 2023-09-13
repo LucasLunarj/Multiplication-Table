@@ -12,12 +12,16 @@ export const Page = () => {
             <NumberSelect />
             <div className={styles.content}>
 
-                <div className={styles.tableBox}>
-                    {context.tableData.display === true ? multiplicationTable.map((item, index) =>
+
+                {
+                    <div className={styles.tableBox}>
+                    context.tableData.display === true ? multiplicationTable.map((item, index) =>
                         <p key={index}>
                             {`${context.tableData.value} X ${item} = ${context.tableData.value * item} `}
-                        </p>) : null}
-                </div>
+                        </p>) : null
+                    </div>
+                }
+
             </div>
         </div>
     )
