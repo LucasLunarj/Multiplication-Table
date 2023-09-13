@@ -13,17 +13,14 @@ export const Page = () => {
             <h1>Multiplication Table</h1>
             <NumberSelect />
             <div className={styles.content}>
-
-
-                {
-                    <div className={styles.tableBox}>
-                    context.tableData.display === true ? multiplicationTable.map((item, index) =>
-                        <p key={index}>
-                            {`${context.tableData.value} X ${item} = ${context.tableData.value * item} `}
-                        </p>) : null
-                    </div>
-                }
-
+                <div className={styles.tableBox}>
+                    {
+                        context.tableData.display === true ? multiplicationTable.map((item, index) =>
+                            <p key={index}>
+                                {`${context.tableData.value} X ${item} = ${context.tableData.value * item} `}
+                            </p>) : null
+                    }
+                </div>
             </div>
         </div>
     )
